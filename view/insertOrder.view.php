@@ -32,12 +32,12 @@ $alert=[];
                 if (mysqli_query($db, $sql)===TRUE){
                     $alert[]="Запись внесена<br>";
                 }else{
-                    $alert="Error: " . $sql . "<br>" . mysqli_error($db);
+                    $alert[]="Error: " . $sql . "<br>" . mysqli_error($db);
                 }
                 if (mysqli_query($db, $sqlU)===TRUE){
                     $alert[]="Запись внесена<br>";
                 }else{
-                    $alert="Error: " . $sql . "<br>" . mysqli_error($db);
+                    $alert[]="Error: " . $sql . "<br>" . mysqli_error($db);
                 }
                 //если в посте есть несколько наименований имущества, то делаем несколько записетй в базу
 
