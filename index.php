@@ -1,7 +1,27 @@
-
 <?php
+    $users=[
+        'admin' => 'admin',
+        'guest' => 'guest'
+    ];
+
+
+        function validate ($user, $pass, $users){
+            if (isset($users[$user]) && ($users[$user]===$pass)) {
+                return true;
+            }else{
+                return false;
+            }
+
+
+        }
+        if (!validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_USER'],  $users)){
+            http_response_code(401);
+            header('WWW-Authenticate: Basic realm="My Realm"');
+            exit('введите пароль');
+        }
+
     require_once "core/bootstrap.php";
-?>
+    ?>
 
 <!DOCTYPE html>
 <html>
@@ -34,6 +54,8 @@
     <header style="background-color: #d4c24f" class="w3-container w3-theme  w3-center">
         <h2 class="w3-large w3-padding-16">Программа контроля за исполнением решений Минэнерго о распоряжении имуществом</h2>
         <hr>
+        <pre>
+
     </header>
 
     <div class="w3-container">
