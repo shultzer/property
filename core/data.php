@@ -5,7 +5,7 @@ error_reporting(E_ALL);
         ['href' => 'index.php?page=insertLetter', 'anchor' => 'Внесение ходатайства организации'],
         ['href' => 'index.php?page=insertOrder', 'anchor' =>'Внесение приказа Минэнерго'],
         ['href' => 'index.php?page=insertActs', 'anchor' => 'Внесение отчета об исполнении приказа'],
-        ['href' => 'index.php?page=reportOrder', 'anchor' => 'Формирование отчета по приказам'],
+        ['href' => 'index.php?page=reportOrder', 'anchor' => 'Приказы Минэнерго'],
         ['href' => 'index.php?page=lettersworders_query', 'anchor' => 'Ходатайства по которым изданы приказы'],
         ['href' => 'index.php?page=letterswoorders_query', 'anchor' => 'Ходатайства по которым нет приказа'],
         ['href' => 'index.php?page=ordersworeports_query', 'anchor' => 'Неисполненные приказы'],

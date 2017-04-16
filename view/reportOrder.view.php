@@ -11,7 +11,7 @@ echo '</pre>';*/
 
 <div class="w3-container">
     <h2><?=$title?></h2>
-    
+
 
     <table class="w3-table-all">
         <tr>

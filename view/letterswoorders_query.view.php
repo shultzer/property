@@ -35,6 +35,3 @@ $sql = 'SELECT * FROM Letters WHERE Letters.letternum NOT IN (SELECT letternum F
 
     </table>
 </div>
-<?php
-
-?>

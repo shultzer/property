@@ -3,6 +3,7 @@
 
     switch ($page){
         case 'index':
+            $title = 'Госимущество';
             $include = 'index';
             break;
         case 'insertLetter':

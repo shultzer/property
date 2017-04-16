@@ -1,0 +1,12 @@
+{
+    "name": "user/property",
+    "authors": [
+        {
+            "name": "Sergei",
+            "email": "skorohods@mail.ru"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.2"
+    }
+}
