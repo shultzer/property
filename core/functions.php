@@ -1,5 +1,18 @@
 <?php
 
+    function validate($user, $pass) {
+
+        $users=[
+            'admin' => 'admin',
+            'guest' => 'guest'
+        ];
+
+        if (isset($users[$user]) && ($users[$user] === $pass)) {
+            return true;
+            } else {
+            return false;
+        }
+    }
 /*
  отрисовка ссылок навигации сайта
 */
@@ -26,7 +39,7 @@
 
     function goBack()
     {
-        $url = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'http://localhost/property/home.php';
+        $url = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'http://localhost/property/index.php';
 
         header("Location: $url");
     }

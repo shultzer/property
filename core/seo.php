@@ -1,10 +1,10 @@
 <?php
-    $page = isset($_GET['page']) ? $_GET['page'] : 'index';
+    $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
     switch ($page){
-        case 'index':
+        case 'home':
             $title = 'Госимущество';
-            $include = 'index';
+            $include = 'home';
             break;
         case 'insertLetter':
             $title = 'Внесение ходатайства';
