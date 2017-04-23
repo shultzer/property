@@ -3,14 +3,13 @@
 
     if (isset($_POST['logout'])){
         session_unset();
-
     }
 
 if (!validate($_SESSION['login'], $_SESSION['pwd'])){
     header('Location: login.php');
     exit();
 }
-dump($_POST);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,9 +40,7 @@ dump($_POST);
 <div class="w3-main" style="margin-left:300px;">
 
     <header style="background-color: #d4c24f" class="w3-container w3-theme  w3-center">
-        <?php
-            dump($_POST);
-            dump($_SESSION);?>
+       
         <form action="" method="post" enctype="multipart/form-data">
         <h4>Привет <?= $_SESSION['login']?></h4>
         <button name="logout">Выйти</button>

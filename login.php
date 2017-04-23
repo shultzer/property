@@ -3,22 +3,22 @@
 
 
 
+if (isset($_POST['username'])) {
+    $user = $_POST['username'];
+    $pwd = $_POST['password'];
 
-        $user = $_POST['username'];
-        $pwd = $_POST['password'];
+    if (validate($user, $pwd)) {
 
-        if (validate($user, $pwd)) {
+        $_SESSION['login'] = $_POST['username'];
+        $_SESSION['pwd'] = $_POST['password'];
 
-            $_SESSION['login'] = $_POST['username'];
-            $_SESSION['pwd'] = $_POST['password'];
-
-            header('Location: index.php');
-            exit();
-        }else{
+        header('Location: index.php');
+        exit();
+    } else {
 
 
     }
-
+}
 ?>
 
 
